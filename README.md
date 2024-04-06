@@ -1,4 +1,4 @@
-# Projecto Front-End / Team-Building
+# Proyecto Front-End / Team-Building
 
 Proyecto de práctica
 
