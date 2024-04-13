@@ -7,30 +7,37 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Proyecto Team Building</title>
   </head>
-  <body class="h-screen bg-sky-50">
-    <header class="w-full h-18 flex items-center text-slate-900 mb-8 pt-2">
+  <body class="h-screen bg-sky-50 grid grid-cols-1 xl:grid-cols-1 gap-4 px-4 py-4">
+    <header class="w-full h-10 md:h-18 flex items-center text-slate-900 mb-8 pt-2">
       <a class="w-full h-full" href="./index.html">
         <img src="https://loremflickr.com/44/44/kitten" alt="" />
       </a>
-      <ul class="w-full flex gap-10 space-x-4 justify-end text-sm">
-        <li>
+      <ul
+        class="w-full flex gap-4 md:gap-10 items-center justify-center md:justify-end text-sm"
+      >
+        <li class="w-16">
           <a
-            class="hover:underline hover:decoration-blue-600"
+            class="hover:underline hover:decoration-blue-600 py-4"
             href="/index.html"
             >Inicio</a
           >
         </li>
-        <li>
-          <a class="hover:underline hover:decoration-blue-600" href=""
+        <li class="w-16">
+          <a
+            class="hover:underline hover:decoration-blue-600 py-4"
+            href="./about.html"
             >Acerca de</a
           >
         </li>
-        <li>
+        <li class="">
           <a
             class="w-6 h-6 hover:underline hover:decoration-blue-600"
             href="https://github.com/eildgc/team-building"
           >
-            <svg class="animate-bounce text-blue-600 hover:text-slate-900 hover:animate-none ease-in-out fill-current h-6 w-6" viewBox="0 0 24 24">
+            <svg
+              class="animate-bounce text-blue-600 hover:text-slate-900 hover:animate-none ease-in-out fill-current h-6 w-6"
+              viewBox="0 0 24 24"
+            >
               <path
                 d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2"
               />
@@ -43,15 +50,25 @@
       <h1 class="text-xl">Lorem</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <div class="flex flex-row gap-4 px-4 py-4 mt-14">
+    <div class="flex flex-col md:flex-row gap-4 px-4 py-4 mt-14">
       <aside
-        class="p-4 w-1/2 rounded-xl flex flex-col gap-4 row-span-1 content-center flex-col bg-slate-900 text-zinc-900"
+        class="p-4 w-full md:w-1/2 rounded-xl flex flex-col gap-4 row-span-1 content-center flex-col bg-slate-300 text-zinc-900"
       >
+        <div>
+          <h3>Lorem ipsum</h3>
+          <a href="#" class="flex items-center underline decoration-1 gap-1 hover:text-blue-600 text-sm text-slate-900 font-semibold"
+            >Enlace al room
+            <svg class="w-4 h-4 fill-current" viewBox="0 0 256 256">
+              <path
+                d="M216 28H88a12 12 0 0 0-12 12v36H40a12 12 0 0 0-12 12v128a12 12 0 0 0 12 12h128a12 12 0 0 0 12-12v-36h36a12 12 0 0 0 12-12V40a12 12 0 0 0-12-12m-60 176H52V100h104Zm48-48h-24V88a12 12 0 0 0-12-12h-68V52h104Z"
+              /></svg
+          ></a>
+        </div>
         <div
-          class="flex justify-start items-center gap-2 rounded-lg bg-slate-300 p-2"
+          class="flex justify-start items-center gap-2 rounded-lg bg-sky-50 p-2"
         >
           <img
-            class="w-10 h-10 rounded-full"
+            class="w-10 h-10 rounded-md"
             src="https://loremflickr.com/60/60/kitten"
             alt="kitten"
           />
@@ -63,10 +80,10 @@
           />
         </div>
         <div
-          class="flex justify-start items-center gap-2 rounded-lg bg-slate-300 p-2"
+          class="flex justify-start items-center gap-2 rounded-lg bg-sky-50 p-2"
         >
           <img
-            class="w-10 h-10 rounded-full"
+            class="w-10 h-10 rounded-md"
             src="https://loremflickr.com/60/60/kitten"
             alt="kitten"
           />
@@ -78,10 +95,10 @@
           />
         </div>
         <div
-          class="flex justify-start items-center gap-2 rounded-lg bg-slate-300 p-2"
+          class="flex justify-start items-center gap-2 rounded-lg bg-sky-50 p-2"
         >
           <img
-            class="w-10 h-10 rounded-full"
+            class="w-10 h-10 rounded-md"
             src="https://loremflickr.com/60/60/kitten"
             alt="kitten"
           />
@@ -93,20 +110,40 @@
           />
         </div>
       </aside>
-      <div class="w-full p-4">
-        <a href="#" class="group block relative">
+      <div class="w-full p-4 flex">
+        <a class="w-full group block relative">
           <div
-            class="w-80 bg-slate-300 rounded-lg flex justify-center items-center py-16 ease-in-out group-transition-colors:bg-slate-600 delay-100 group-focus:bg-slate-400 group-active:bg-slate-400 group-hover:bg-slate-200 absolute right-1/4 z-10 -translate-y-4"
+            class="w-64 md:w-80 hidden rounded-lg justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-300 group-focus:flex group-active:flex group-focus:bg-slate-200 group-active:bg-slate-200 absolute right-1/4 z-10 -translate-x-20"
           >
             <p>Lorem ipsum</p>
           </div>
           <div
-            class="w-80 bg-slate-400 rounded-lg flex justify-center items-center py-16 ease-in-out group-transition-colors:bg-slate-300 delay-75 group-focus:bg-slate-500 group-active:bg-slate-500 group-hover:bg-slate-600 absolute right-1/4 z-20 translate-y-3"
+            class="w-64 md:w-80 bg-slate-200 rounded-lg flex justify-center items-center py-14 ease-in-out group-hover:bg-slate-300 delay-100 group-focus:bg-slate-300 group-active:bg-slate-300 absolute right-1/4 z-20 -translate-x-14"
           >
             <p>Lorem ipsum</p>
           </div>
           <div
-            class="w-80 bg-slate-700 rounded-lg flex justify-center items-center py-16 text-sky-50 ease-in-out group-transition-colors:bg-slate-200 delay-0 group-focus:bg-slate-800 group-active:bg-slate-800 group-hover:bg-slate-900 absolute right-1/4 z-30 translate-y-10"
+            class="w-64 md:w-80 bg-slate-300 rounded-lg flex justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-400 delay-75 group-focus:bg-slate-400 group-active:bg-slate-400 absolute right-1/4 z-30 -translate-x-5"
+          >
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            class="w-64 md:w-80 bg-slate-600 rounded-lg flex flex-col justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-700 group-focus:bg-slate-600 group-active:bg-slate-600 absolute right-1/4 z-40"
+          >
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            class="w-64 md:w-80 bg-slate-400 rounded-lg flex justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-500 group-focus:bg-slate-300 group-active:bg-slate-300 absolute right-1/4 z-30 translate-x-5"
+          >
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            class="w-64 md:w-80 bg-slate-200 rounded-lg flex justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-300 delay-100 group-focus:bg-slate-200 group-active:bg-slate-200 absolute right-1/4 z-20 translate-x-14"
+          >
+            <p>Lorem ipsum</p>
+          </div>
+          <div
+            class="w-64 md:w-80 hidden rounded-lg flex justify-center items-center py-14 text-sky-50 ease-in-out group-hover:bg-slate-300 group-focus:flex group-active:flex group-focus:bg-slate-100 group-active:bg-slate-100 absolute right-1/4 z-10 translate-x-20"
           >
             <p>Lorem ipsum</p>
           </div>

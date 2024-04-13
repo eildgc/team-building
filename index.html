@@ -7,25 +7,29 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Proyecto Team Building</title>
   </head>
-  <body>
-    <header class="w-full h-18 flex items-center text-slate-900 mb-8 pt-2">
+  <body class="h-fit md:h-screen bg-sky-50 grid grid-cols-1 xl:grid-cols-1 gap-4 px-4 py-4">
+    <header class="w-full h-10 md:h-18 flex items-center text-slate-900 mb-8 pt-2">
       <a class="w-full h-full" href="./index.html">
         <img src="https://loremflickr.com/44/44/kitten" alt="" />
       </a>
-      <ul class="w-full flex gap-10 space-x-4 justify-end text-sm">
-        <li>
+      <ul
+        class="w-full flex gap-4 md:gap-10 items-center justify-center md:justify-end text-sm"
+      >
+        <li class="w-16">
           <a
-            class="hover:underline hover:decoration-blue-600"
+            class="hover:underline hover:decoration-blue-600 py-4"
             href="/index.html"
             >Inicio</a
           >
         </li>
-        <li>
-          <a class="hover:underline hover:decoration-blue-600" href=""
+        <li class="w-16">
+          <a
+            class="hover:underline hover:decoration-blue-600 py-4"
+            href="./about.html"
             >Acerca de</a
           >
         </li>
-        <li>
+        <li class="">
           <a
             class="w-6 h-6 hover:underline hover:decoration-blue-600"
             href="https://github.com/eildgc/team-building"
@@ -42,10 +46,12 @@
         </li>
       </ul>
     </header>
-    <div class="w-full flex flex-col gap-20 mx-auto">
-      <div class="flex items-center gap-14 mt-14 justify-center">
-        <div class="w-2/5 my-10 text-slate-900">
-          <h2 class=" font-bold text-xl">
+    <div class="w-full flex flex-col gap-4 md:gap-20 mx-auto">
+      <div
+        class="flex items-center flex-col md:flex-row gap-4 md:gap-14 mt-0 md:mt-14 justify-center"
+      >
+        <div class="w-3/4 md:w-2/5 my-10 text-slate-900">
+          <h2 class="font-bold text-xl">
             Lorem ipsum, dolor sit amet consectetur adipisicing
           </h2>
           <p class="">
@@ -60,19 +66,21 @@
             Lorem ipsum, dolor sit amet consectetur adipisicing
           </p>
           <input
-            class="w-1/2 p-4 mx-auto rounded"
+            class="w-2/3 md:w-1/2 p-4 mx-auto rounded text-xs md:text-base"
             type="text"
             placeholder="Create username"
           />
           <a
             href="./room.html"
-            class="w-1/2 p-1 mx-auto rounded bg-slate-900 hover:bg-slate-600 decoration-slate-950 text-center text-gray-100 py-4"
+            class="w-full md:w-1/2 p-1 mx-auto rounded bg-slate-900 hover:bg-slate-600 decoration-slate-950 text-center text-gray-100 py-4 text-xs md:text-base"
           >
             Create username
           </a>
         </div>
       </div>
-      <div class="w-full h-full flex gap-4 justify-center content-center text-slate-900">
+      <div
+        class="w-full h-full hidden md:flex gap-4 justify-center content-center text-slate-900"
+      >
         <div class="flex flex-col gap-2 rounded-lg bg-slate-300 p-8">
           <img
             class="w-14 h-14"
@@ -108,6 +116,43 @@
           </p>
         </div>
       </div>
+      <div class="group relative w-full h-fit">
+        <div
+          class="visible group-active:z-0 absolute z-10 group-active:invisible transition transform delay-75"
+        >
+          <div class="flex flex-col gap-2 rounded-lg bg-slate-300 p-8">
+            <img
+              class="w-14 h-14"
+              class=""
+              src="https://loremflickr.com/60/60/kitten"
+              alt="kitten"
+            />
+            <h3 class="font-bold text-lg">Lorem</h3>
+            <p class="text-md">
+              Lorem ipsum 1, dolor sit amet consectetur adipisicing
+            </p>
+          </div>
+        </div>
+        <div
+          class="invisible group-active:visible group-active:z-10 absolute z-0 transition transform delay-75"
+        >
+          <div class="flex flex-col gap-2 rounded-lg bg-slate-300 p-8">
+            <img
+              class="w-14 h-14"
+              class=""
+              src="https://loremflickr.com/60/60/kitten"
+              alt="kitten"
+            />
+            <h3 class="font-bold text-lg">Lorem</h3>
+            <p class="text-md">
+              Lorem ipsum 2, dolor sit amet consectetur adipisicing
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <footer class="pt-4 mt-52 md:mt-10">
+      <p class="underline text-sm text-center">2024</p>
+    </footer>
   </body>
 </html>
